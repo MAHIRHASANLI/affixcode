@@ -1,0 +1,28 @@
+.main-text {
+}
+
+.text-title {
+  /* font-family: Zen Dots; */
+  width: 70%;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #565454;
+}
+
+.text-bold {
+  position: relative;
+  display: block;
+  text-align: end;
+  /* margin-right: 20px; */
+}
+
+.text-bold::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 70%;
+  border: 2px solid #565454;
+}
