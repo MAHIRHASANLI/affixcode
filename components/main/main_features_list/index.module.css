@@ -44,7 +44,7 @@
   gap: 10px;
 }
 
-.features-list-title-text p:last-child {
+.features-list-title-text p {
   color: #7d7878;
   font-weight: 400;
   font-size: 14px;

@@ -1,0 +1,90 @@
+.button {
+  width: 170px;
+  height: 45px;
+  justify-content: space-between;
+  padding-top: 4px;
+  padding-right: 14px;
+  padding-bottom: 4px;
+  padding-left: 24px;
+  border-radius: 64px;
+  border-width: 1px;
+  display: inline-block;
+  margin-top: 24px;
+  border: 1px solid #8a4fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #3c3a3a;
+  display: flex;
+  position: relative;
+  background: #8a4fff;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.3s;
+  margin-top: 60px;
+}
+
+.not-touched {
+  position: absolute;
+  bottom: 17px;
+  left: 20px;
+  transition: all 0.3s;
+  color: #ffff;
+}
+
+.touched {
+  position: absolute;
+  bottom: -100px;
+  left: 20px;
+}
+
+.button svg {
+  padding: 8px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  color: #8a4fff;
+  position: absolute;
+  bottom: 6px;
+  right: 20px;
+  background: #ffff;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 0;
+  height: 0;
+  background: #ffff;
+}
+
+.button:hover .not-touched {
+  bottom: 100px;
+  transition: all 0.3s;
+}
+
+.button:hover .touched {
+  bottom: 17px;
+  left: 20px;
+  transition: all 0.3s;
+}
+
+.button:hover::before {
+  width: 300px;
+  height: 300px;
+  top: 0;
+  right: 0;
+  border-radius: 64px;
+  /* z-index: -1; */
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover svg {
+  transform: rotate(-45deg);
+  transition: all 0.1s;
+  background: #ffff;
+}

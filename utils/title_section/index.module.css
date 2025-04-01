@@ -1,0 +1,18 @@
+.title {
+  color: #565454;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.description {
+  /* font-family: Montserrat; */
+  width: 90%;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  letter-spacing: 0%;
+  color: #000000;
+}

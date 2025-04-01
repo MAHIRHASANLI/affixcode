@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
-import ButtonTransparent from "@/utils/button_transparent";
+import ButtonColorces from "@/utils/button_colorces";
 import Image from "next/image";
 
 import img1 from "@/assets/images/main-sect-img1.webp";
@@ -24,7 +24,7 @@ const MissionStatement = () => {
         </p>
       </div>
       <div>
-        <ButtonTransparent>Daha çox</ButtonTransparent>
+        <ButtonColorces>Daha çox</ButtonColorces>
       </div>
     </div>
   );

@@ -9,20 +9,22 @@ type Props = {};
 
 const MainSection = (props: Props) => {
   return (
-    <div className={styles["main-grid"]}>
-      <div className={styles["main-item"]}>
-        <MainText />
+    <section className="section">
+      <div className={styles["main-grid"]}>
+        <div className={styles["main-item"]}>
+          <MainText />
+        </div>
+        <div className={styles["main-item"]}>
+          <MissionStatement />
+        </div>
+        <div className={styles["main-item"]}>
+          <MainCard />
+        </div>
+        <div className={styles["main-item"]}>
+          <MainFeaturesList />
+        </div>
       </div>
-      <div className={styles["main-item"]}>
-        <MissionStatement />
-      </div>
-      <div className={styles["main-item"]}>
-        <MainCard />
-      </div>
-      <div className={styles["main-item"]}>
-        <MainFeaturesList />
-      </div>
-    </div>
+    </section>
   );
 };
 

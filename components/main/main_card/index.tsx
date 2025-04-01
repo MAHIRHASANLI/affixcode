@@ -17,6 +17,9 @@ const MainCard = () => {
         src={image1}
         className={styles["main-card-image-small"]}
       />
+      <div className={styles["main-card-text"]}>
+        <p>Unikal və peşəkar həllər, Brendinə dəyər qatan veb dizayn!</p>
+      </div>
     </div>
   );
 };

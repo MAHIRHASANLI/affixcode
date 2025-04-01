@@ -1,0 +1,13 @@
+.services-grid {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.services-grid > div.services-item:first-child {
+  grid-column: 1 / 2;
+}
+
+.services-grid > div.services-item:last-child {
+  grid-column: 2 / 3;
+}

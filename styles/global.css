@@ -15,6 +15,11 @@ div[data-nextjs-scroll-focus-boundary] {
   grid-column: 1 / -1;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 @media screen and (min-width: 1500px) {
   .container {
     display: grid;
