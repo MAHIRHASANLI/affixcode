@@ -10,7 +10,12 @@ const MainCard = () => {
         fill
         alt="main-card"
         src={image1}
-        className={styles["main-card-image"]}
+        className={styles["main-card-image-bigg"]}
+      />
+      <Image
+        alt="main-card"
+        src={image1}
+        className={styles["main-card-image-small"]}
       />
     </div>
   );

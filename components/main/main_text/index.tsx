@@ -6,7 +6,7 @@ const MainText = () => {
     <div className={styles["main-text"]}>
       <h1 className={styles["text-title"]}>
         Biznesiniz <span className={styles["text-bold"]}>Üçün</span> Mükəmməl
-        Veb Sayt
+        Sayt
       </h1>
     </div>
   );

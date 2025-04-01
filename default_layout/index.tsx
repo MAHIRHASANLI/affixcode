@@ -1,18 +1,15 @@
 import React from "react";
 import "@/styles/reset.css";
 import "@/styles/global.css";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import HeaderSection from "@/sections/header";
 import FooterSection from "@/sections/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fonts = Montserrat({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-montserrat",
+  fallback: ["system-ui", "sans-serif"],
 });
 
 type Props = {
@@ -21,7 +18,7 @@ type Props = {
 
 const DefaultLayout = ({ children }: Props) => {
   return (
-    <div className={`${geistSans.variable} ${geistMono.variable}`}>
+    <div className={fonts.className}>
       <HeaderSection />
       <div className="container">{children}</div>
       <FooterSection />

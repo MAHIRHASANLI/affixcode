@@ -15,7 +15,7 @@
   position: relative;
   display: block;
   text-align: end;
-  /* margin-right: 20px; */
+  margin-right: 30px;
 }
 
 .text-bold::before {
@@ -23,6 +23,6 @@
   position: absolute;
   top: 50%;
   left: 0;
-  width: 70%;
+  width: 65%;
   border: 2px solid #565454;
 }
