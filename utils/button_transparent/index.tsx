@@ -10,7 +10,9 @@ const ButtonTransparent = ({ children }: Props) => {
   return (
     <div>
       <Link href="/" className={styles.button}>
-        {children} <IoMdArrowForward />
+        <span className={styles["not-touched"]}>{children}</span>
+        <span className={styles.touched}>{children}</span>
+        <IoMdArrowForward />
       </Link>
     </div>
   );
