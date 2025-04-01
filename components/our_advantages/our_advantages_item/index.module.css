@@ -1,0 +1,25 @@
+.our-advantage-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+  border-radius: 60px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  background: #f1f1f1;
+}
+
+.icon svg {
+  color: #46bb44;
+  font-size: 30px;
+}
+
+.title h5 {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 100%;
+  color: #000000;
+}
