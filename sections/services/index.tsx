@@ -5,7 +5,7 @@ import styles from "./index.module.css";
 
 type Props = {};
 
-const Services = (props: Props) => {
+const ServicesSection = (props: Props) => {
   return (
     <section className="section">
       <div className={styles["services-grid"]}>
@@ -20,4 +20,4 @@ const Services = (props: Props) => {
   );
 };
 
-export default Services;
+export default ServicesSection;

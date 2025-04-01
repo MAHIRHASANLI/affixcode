@@ -1,6 +1,7 @@
 import DefaultLayout from "@/default_layout";
 import MainSection from "@/sections/main";
-import Services from "@/sections/services";
+import ProjectsSection from "@/sections/projects";
+import ServicesSection from "@/sections/services";
 import React from "react";
 
 type Props = {};
@@ -9,7 +10,8 @@ const HomeContainer = (props: Props) => {
   return (
     <DefaultLayout>
       <MainSection />
-      <Services />
+      <ServicesSection />
+      <ProjectsSection />
     </DefaultLayout>
   );
 };

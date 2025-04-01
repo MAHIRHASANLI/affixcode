@@ -1,0 +1,12 @@
+.projects-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 40px;
+}
+
+.projects-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
