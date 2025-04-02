@@ -1,0 +1,56 @@
+.form-wrapper {
+  border-radius: 12px;
+  padding: 40px;
+  gap: 16px;
+  border-width: 1px;
+  background: #ffffff;
+  border: 1px solid #8a4fff;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+.form-item input,
+.form-item textarea {
+  outline: none;
+  border: none;
+
+  background: #f1f1f1;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  gap: 8px;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+}
+
+.form-item-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-item-btn button {
+  cursor: pointer;
+  border-radius: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  color: #ffffff;
+  background: #b593ff;
+  outline: none;
+  border: none;
+}

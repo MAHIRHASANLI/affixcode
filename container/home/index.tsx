@@ -1,5 +1,7 @@
 import DefaultLayout from "@/default_layout";
 import BenefitsSection from "@/sections/benefits";
+import ContactSection from "@/sections/contact";
+import FaqsSection from "@/sections/faqs";
 import MainSection from "@/sections/main";
 import OurAdvantagesSection from "@/sections/our_advantages";
 import ProjectsSection from "@/sections/projects";
@@ -16,6 +18,10 @@ const HomeContainer = (props: Props) => {
       <ProjectsSection />
       <BenefitsSection />
       <OurAdvantagesSection />
+
+      {/* //?? */}
+      <ContactSection />
+      <FaqsSection />
     </DefaultLayout>
   );
 };
