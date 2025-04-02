@@ -1,0 +1,16 @@
+.button {
+  border-radius: 40px;
+  background: #8a4fff;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 12px 19px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.button svg {
+  font-size: 15px;
+}

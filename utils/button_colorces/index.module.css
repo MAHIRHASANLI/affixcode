@@ -1,10 +1,8 @@
 .button {
   width: 180px;
-  height: 45px;
+  height: 50px;
   justify-content: space-between;
-  padding-top: 4px;
   padding-right: 14px;
-  padding-bottom: 4px;
   padding-left: 24px;
   border-radius: 64px;
   border-width: 1px;
@@ -27,9 +25,14 @@
 
 .not-touched {
   position: absolute;
-  bottom: 17px;
+  top: 16px;
   left: 20px;
   transition: all 0.3s;
+  color: #000000;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .touched {
@@ -37,18 +40,23 @@
   bottom: -100px;
   left: 20px;
   color: #ffff;
+  transition: all 0.3s;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .button svg {
-  padding: 8px;
+  padding: 5px;
   border-radius: 50%;
   width: 24px;
   height: 24px;
   color: #8a4fff;
   position: absolute;
-  bottom: 6px;
+  bottom: 8px;
   right: 20px;
-  transition: all 0.1s;
+  transition: all 0.2s;
 }
 
 .button::before {
@@ -63,12 +71,12 @@
 }
 
 .button:hover .not-touched {
-  bottom: 100px;
+  top: -100px;
   transition: all 0.3s;
 }
 
 .button:hover .touched {
-  bottom: 17px;
+  bottom: 16px;
   left: 20px;
   transition: all 0.3s;
 }
@@ -85,6 +93,6 @@
 
 .button:hover svg {
   transform: rotate(-45deg);
-  transition: all 0.1s;
+  transition: all 0.2s;
   background: #fff;
 }

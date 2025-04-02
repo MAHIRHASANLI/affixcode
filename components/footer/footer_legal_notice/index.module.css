@@ -1,0 +1,19 @@
+.legal-notice {
+  padding: 16px 0;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.legal-notice p {
+  color: #565454;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.legal-notice a {
+  color: black;
+  font-weight: 700;
+}

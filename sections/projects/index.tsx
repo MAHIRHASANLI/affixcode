@@ -6,7 +6,7 @@ type Props = {};
 
 const ProjectsSection = (props: Props) => {
   return (
-    <section className="section">
+    <section className="section" id="project">
       <ProjectsComponent />
     </section>
   );

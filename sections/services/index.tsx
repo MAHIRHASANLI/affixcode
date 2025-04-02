@@ -7,7 +7,7 @@ type Props = {};
 
 const ServicesSection = (props: Props) => {
   return (
-    <section className="section">
+    <section className="section" id="services">
       <div className={styles["services-grid"]}>
         <div className={styles["services-item"]}>
           <ServicesIntro />

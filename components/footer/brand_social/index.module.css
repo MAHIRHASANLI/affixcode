@@ -1,0 +1,10 @@
+.brand-socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials-wrapper {
+  display: flex;
+  gap: 5px;
+}

@@ -9,7 +9,7 @@ type Props = {
 const ButtonColorful = ({ children }: Props) => {
   return (
     <div>
-      <Link href="/" className={styles.button}>
+      <Link href="/#contact" className={styles.button}>
         <span className={styles["not-touched"]}>{children}</span>
         <span className={styles.touched}>{children}</span>
         <BsArrowRight />

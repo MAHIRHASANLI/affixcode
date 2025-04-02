@@ -19,7 +19,7 @@ const OurBenefits = (props: Props) => {
     },
     {
       icon: <TbSettingsFilled />,
-      title: "SEO Dostu",
+      title: "SEO Dostu Vebsayt",
       description: "Saytınızın axtarış motorlarında üst sıralarda yer alması",
     },
     {

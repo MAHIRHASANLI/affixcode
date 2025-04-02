@@ -11,7 +11,7 @@ const fonts = Montserrat({
   variable: "--font-montserrat",
   fallback: ["system-ui", "sans-serif"],
 });
-
+// font-family: Gilroy, sans-serif;
 type Props = {
   children: React.ReactNode;
 };
@@ -20,7 +20,7 @@ const DefaultLayout = ({ children }: Props) => {
   return (
     <div className={fonts.className}>
       <HeaderSection />
-      <div className="container">{children}</div>
+      <main className="container">{children}</main>
       <FooterSection />
     </div>
   );

@@ -1,0 +1,23 @@
+.images {
+  position: relative;
+  position: relative;
+  width: 33px;
+  height: 33px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+a.logo {
+  color: #000;
+  display: block;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.images img {
+  object-fit: cover;
+}
