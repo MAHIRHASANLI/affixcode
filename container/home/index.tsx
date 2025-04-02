@@ -1,5 +1,6 @@
 import DefaultLayout from "@/default_layout";
 import BenefitsSection from "@/sections/benefits";
+import BlogsSection from "@/sections/blogs";
 import ContactSection from "@/sections/contact";
 import FaqsSection from "@/sections/faqs";
 import MainSection from "@/sections/main";
@@ -18,8 +19,7 @@ const HomeContainer = (props: Props) => {
       <ProjectsSection />
       <BenefitsSection />
       <OurAdvantagesSection />
-
-      {/* //?? */}
+      <BlogsSection />
       <ContactSection />
       <FaqsSection />
     </DefaultLayout>
