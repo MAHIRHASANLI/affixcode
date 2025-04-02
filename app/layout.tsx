@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AFFIX Code | Ana səhifə",
+  title: "AFFIXCode | Ana səhifə",
   description:
     "AFFIX Code – Müasir veb saytların və ERP sistemlərinin hazırlanması. Biznesinizi onlayn inkişaf etdirmək üçün peşəkar İT həlləri təqdim edirik.",
   keywords: [
@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     "mobil tətbiq",
     "web development",
     "AFFIX Code",
+    "affix code",
+    "affixcode",
+    "affix",
   ],
   icons: {
     icon: "/images/logo-web.svg",

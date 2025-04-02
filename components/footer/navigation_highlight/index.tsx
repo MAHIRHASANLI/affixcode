@@ -17,7 +17,7 @@ const NavigationHighlight = (props: Props) => {
         <div>
           {" "}
           <div className={styles.title}>
-            <p>AFFIX CODE</p>
+            <p>AFFIXCode</p>
           </div>
           <ul className={styles["links-wrapper"]}>
             <li>

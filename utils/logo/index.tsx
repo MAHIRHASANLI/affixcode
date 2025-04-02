@@ -10,7 +10,7 @@ const LogoComponent: React.FC = () => {
       <div className={styles.images}>
         <Image src={img} fill alt="affix code" />
       </div>
-      AFFIX Code
+      AFFIXCode
     </Link>
   );
 };

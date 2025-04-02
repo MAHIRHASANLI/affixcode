@@ -38,3 +38,9 @@
 .desktop-nav-btn a svg {
   display: none !important;
 }
+
+@media screen and (max-width: 1000px) {
+  .desktop-nav-wrapper {
+    display: none;
+  }
+}
