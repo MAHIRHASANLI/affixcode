@@ -11,10 +11,20 @@ const MissionStatement = () => {
     <div>
       <div className={styles.images}>
         <div className={styles.image}>
-          <Image fill src={img1} alt="" />
+          <Image
+            fill
+            src={img1}
+            alt="affix code"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
         </div>
         <div className={styles.image}>
-          <Image fill src={img2} alt="" />
+          <Image
+            fill
+            src={img2}
+            alt="affix code"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
         </div>
       </div>
       <div className={styles["mission-content"]}>

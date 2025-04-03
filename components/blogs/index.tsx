@@ -88,7 +88,12 @@ const NewsSlider: React.FC = () => {
           <Link href="">
             <div className={css.slider}>
               <div className={css.images}>
-                <Image src={image} alt={title} fill />
+                <Image
+                  src={image}
+                  alt={title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
               </div>
               <div className={css.content}>
                 <h3>{title}</h3>

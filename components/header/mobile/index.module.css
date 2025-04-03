@@ -9,12 +9,11 @@
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
-  /* position: relative; */
 }
 
 .mobile-menu {
   background: #fff;
-  height: 100vh;
+  height: 100%;
   left: -200px;
   right: 0;
   bottom: 0;

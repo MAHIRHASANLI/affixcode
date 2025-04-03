@@ -8,7 +8,12 @@ const LogoComponent: React.FC = () => {
   return (
     <Link href="/" className={styles.logo}>
       <div className={styles.images}>
-        <Image src={img} fill alt="affix code" />
+        <Image
+          src={img}
+          fill
+          alt="affix code"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </div>
       AFFIXCode
     </Link>
