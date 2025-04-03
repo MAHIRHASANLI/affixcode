@@ -13,7 +13,7 @@
 
 .mobile-menu {
   background: #fff;
-  height: calc(100vh - 80px);
+  height: calc(90vh - 80px);
   left: -200px;
   right: 0;
   bottom: 0;
