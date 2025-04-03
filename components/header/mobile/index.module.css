@@ -4,16 +4,21 @@
   }
 }
 
+.mobile-logo a {
+  font: 16px !important;
+}
+
 .mobile-nav-wrapper {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+  top: 20px;
+  padding-top: 20px;
 }
 
 .mobile-menu {
   background: #fff;
-  height: calc(90vh - 80px);
+  height: calc(100vh - 80px);
   left: -200px;
   right: 0;
   bottom: 0;
@@ -55,7 +60,7 @@
 
 .burger-icon {
   border-radius: 5px;
-  padding: 5px 8px;
+  padding: 8px 10px;
   background-color: #8a4fff;
   display: flex;
   justify-content: center;

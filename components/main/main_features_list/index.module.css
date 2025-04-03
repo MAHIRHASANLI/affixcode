@@ -44,6 +44,15 @@
   gap: 10px;
 }
 
+.features-list-title-text h3 {
+  color: #424040;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
 .features-list-title-text p {
   color: #7d7878;
   font-weight: 400;

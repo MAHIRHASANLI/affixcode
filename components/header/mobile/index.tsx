@@ -11,11 +11,22 @@ import { CiLinkedin } from "react-icons/ci";
 
 const MobileVersion = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [scrollPosition, setScrollPosition] = React.useState(0);
 
   function handleOpen() {
     setIsOpen((prev) => {
       const newState = !prev;
-      document.body.style.overflow = newState ? "hidden" : "auto";
+      if (newState) {
+        setScrollPosition(window.scrollY); // Hal-hazırki scroll mövqeyini yadda saxlayırıq
+        document.body.style.position = "fixed";
+        document.body.style.top = `-${window.scrollY}px`;
+        document.body.style.width = "100%";
+      } else {
+        document.body.style.position = "";
+        document.body.style.top = "";
+        document.body.style.width = "";
+        window.scrollTo(0, scrollPosition); // Səhifəni əvvəlki yerinə qaytarırıq
+      }
       return newState;
     });
   }
