@@ -25,7 +25,7 @@ const MobileVersion = () => {
         document.body.style.position = "";
         document.body.style.top = "";
         document.body.style.width = "";
-        window.scrollTo(0, scrollPosition); // Səhifəni əvvəlki yerinə qaytarırıq
+        window.scrollTo(0, scrollPosition);
       }
       return newState;
     });
