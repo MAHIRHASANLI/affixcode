@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-
+import { Montserrat } from "next/font/google";
+// import logo from "@/public/logo-web.svg";
+const logo = "/logo-web.png";
 export const metadata: Metadata = {
-  title: "AFFIXCode | Ana səhifə",
+  title: "AFFIX Code | Ana səhifə",
   description:
     "AFFIX Code – Müasir veb saytların və ERP sistemlərinin hazırlanması. Biznesinizi onlayn inkişaf etdirmək üçün peşəkar İT həlləri təqdim edirik.",
   keywords: [
@@ -15,8 +17,9 @@ export const metadata: Metadata = {
     "affix",
   ],
   icons: {
-    icon: "/images/logo-web.svg",
+    icon: logo, // logo-ya tam URL əlavə edin
   },
+
   openGraph: {
     title: "AFFIX Code – Veb Sayt və ERP Sistemlərinin Hazırlanması",
     description:
@@ -25,10 +28,10 @@ export const metadata: Metadata = {
     siteName: "AFFIX Code",
     images: [
       {
-        url: "https://affixcode.com/preview.jpg",
+        url: logo, // logo-ya tam URL əlavə edin
         width: 1200,
         height: 630,
-        alt: "AFFIX Code Banner",
+        alt: "AFFIX Code",
       },
     ],
     type: "website",
@@ -38,9 +41,17 @@ export const metadata: Metadata = {
     title: "AFFIX Code – Veb Sayt və ERP Sistemləri",
     description:
       "Müasir və peşəkar İT həlləri ilə biznesinizi inkişaf etdirin.",
-    images: ["https://affixcode.com/preview.jpg"],
+    images: [logo], // logo-ya tam URL əlavə edin
   },
 };
+
+// font-family: Gilroy, sans-serif;
+const fonts = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-montserrat",
+  fallback: ["system-ui", "sans-serif"],
+});
 
 export default function RootLayout({
   children,
@@ -49,7 +60,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={fonts.className}>{children}</body>
     </html>
   );
 }
