@@ -4,9 +4,9 @@ import { Montserrat } from "next/font/google";
 const logo = "/logo-web.png";
 export const metadata: Metadata = {
   metadataBase: new URL("https://affixcode.az"),
-  title: "AFFIX Code | Ana səhifə",
+  title: "affixcode | Ana səhifə",
   description:
-    "AFFIX Code – Müasir veb saytların və ERP sistemlərinin hazırlanması. Biznesinizi onlayn inkişaf etdirmək üçün peşəkar İT həlləri təqdim edirik.",
+    "affixcode – Müasir veb saytların və ERP sistemlərinin hazırlanması. Biznesinizi onlayn inkişaf etdirmək üçün peşəkar İT həlləri təqdim edirik.",
   keywords: [
     "veb sayt hazırlanması",
     "ERP sistemləri",

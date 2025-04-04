@@ -7,10 +7,10 @@ type Props = {};
 const FooterLegalNotice = (props: Props) => {
   return (
     <div className={styles["legal-notice"]}>
-      <p>@2025 AFFIXCode</p>
+      <p>@2025 affixcode</p>
       <p>All rights are reserved</p>
       <p>
-        Powered by <Link href="/">AFFIXCode</Link>
+        Powered by <Link href="/">AFFIXCODE</Link>
       </p>
     </div>
   );
