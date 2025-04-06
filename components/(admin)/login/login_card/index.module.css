@@ -1,0 +1,14 @@
+.login-card-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #8a4fff;
+  position: relative;
+}
+
+.login-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 90%;
+}

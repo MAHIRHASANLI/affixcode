@@ -1,0 +1,16 @@
+.login-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .login-grid {
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+
+  .grid-item-right {
+    display: none;
+  }
+}

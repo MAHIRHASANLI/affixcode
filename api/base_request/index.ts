@@ -1,5 +1,6 @@
 export const baseUrl: string = "https://affixcode-backend.vercel.app";
-
+// "http://localhost:3121";
+// https://affixcode-backend.vercel.app
 //! This function is used to make a GET request to the server
 export const baseGetRequest = async (path: string = "") => {
   const response = await fetch(`${baseUrl}/${path}`);
