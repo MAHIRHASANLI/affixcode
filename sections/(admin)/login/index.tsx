@@ -2,7 +2,7 @@ import LoginForm from "@/components/(admin)/login/login_form";
 import React from "react";
 import styles from "./index.module.css";
 import LoginCard from "@/components/(admin)/login/login_card";
-import "@/styles/reset.css";
+
 type Props = {};
 
 const LoginSection = (props: Props) => {

@@ -7,7 +7,7 @@ import FooterSection from "@/sections/(user)/footer";
 type Props = {
   children: React.ReactNode;
 };
-const DefaultLayout = ({ children }: Props) => {
+const UserLayout = ({ children }: Props) => {
   return (
     <>
       <HeaderSection />
@@ -17,4 +17,4 @@ const DefaultLayout = ({ children }: Props) => {
   );
 };
 
-export default DefaultLayout;
+export default UserLayout;

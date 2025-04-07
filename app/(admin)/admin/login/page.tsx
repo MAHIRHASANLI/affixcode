@@ -1,9 +1,17 @@
 import LoginContainer from "@/container/(admin)/login";
 import React from "react";
 
-type Props = {};
+import { Metadata } from "next";
 
-const LoginPage = (props: Props) => {
+const logo = "/images/logo-web.png";
+export const metadata: Metadata = {
+  title: "affixcode | Login",
+  icons: {
+    icon: logo,
+  },
+};
+
+const LoginPage: React.FC = () => {
   return <LoginContainer />;
 };
 

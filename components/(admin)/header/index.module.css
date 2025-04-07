@@ -1,0 +1,32 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 30px 40px; */
+  /* background-color */
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 20px 39px;
+  top: 0;
+  z-index: 1;
+  margin: auto;
+  background-color: transparent;
+  background: linear-gradient(87deg, #212529 0, #212229 100%);
+}
+
+.path-name a {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+}
+
+.logout svg {
+  cursor: pointer;
+  font-size: 25px;
+  color: #fff;
+}
+
+.logout {
+  background: transparent;
+}

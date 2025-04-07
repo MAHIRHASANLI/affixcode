@@ -1,0 +1,72 @@
+.sidebar {
+  display: block;
+  /* position: fixed;
+  top: 0;
+  bottom: 0; */
+  width: 100%;
+  width: 250px;
+  height: 100%;
+  overflow-y: auto;
+  box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.sidebarClosed {
+  transform: translateX(-100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.menu {
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-bottom: 1px dashed black;
+  /* margin-bottom: 15px; */
+}
+
+.menuItem a {
+  /* padding: 20px 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease; */
+  padding: 14px 25px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: #565454;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.menuItem a:hover {
+  color: white;
+  background-color: #8a4fff;
+  transition: all 0.3s;
+}
+
+.menuItem svg {
+  font-size: 18px;
+}
+
+.menu hr {
+  width: 80%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}

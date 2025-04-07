@@ -1,14 +1,21 @@
-"use client";
-import { isTokenExpired } from "@/utils/auth";
-import React, { useEffect } from "react";
+import React from "react";
 
-type Props = {};
+import { Metadata } from "next";
+import AdminContainer from "@/container/(admin)/dashboard";
 
-const DashboardPage = (props: Props) => {
-  useEffect(() => {
-    isTokenExpired();
-  });
-  return <div>DashboardPage</div>;
+const logo = "/images/logo-web.png";
+export const metadata: Metadata = {
+  title: "affixcode | Dashboard",
+  icons: {
+    icon: logo,
+  },
+};
+
+const DashboardPage: React.FC = () => {
+  // useEffect(() => {
+  //   isTokenExpired();
+  // });
+  return <AdminContainer />;
 };
 
 export default DashboardPage;

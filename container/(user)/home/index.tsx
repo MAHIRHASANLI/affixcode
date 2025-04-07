@@ -1,4 +1,4 @@
-import DefaultLayout from "@/default_layout";
+import UserLayout from "@/layouts/user_layout";
 import BenefitsSection from "@/sections/(user)/benefits";
 import BlogsSection from "@/sections/(user)/blogs";
 import ContactSection from "@/sections/(user)/contact";
@@ -13,7 +13,7 @@ type Props = {};
 
 const HomeContainer = (props: Props) => {
   return (
-    <DefaultLayout>
+    <UserLayout>
       <MainSection />
       <ServicesSection />
       <ProjectsSection />
@@ -22,7 +22,7 @@ const HomeContainer = (props: Props) => {
       <BlogsSection />
       <ContactSection />
       <FaqsSection />
-    </DefaultLayout>
+    </UserLayout>
   );
 };
 

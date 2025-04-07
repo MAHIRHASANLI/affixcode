@@ -9,18 +9,24 @@ function logoutUser() {
   redirect("/login");
 }
 
-export function isTokenExpired() {
-  const token = localStorage.getItem("token");
-  if (!token) {
-    logoutUser();
-    return;
-  }
+export function isAuth(cookies: any) {
+  const token = cookies.get("accessToken")?.value;
 
-  const payload = JSON.parse(atob(token.split(".")[1]));
-  const currentTime = Math.floor(Date.now() / 1000);
+  if (!token) return false;
 
-  if (payload.exp < currentTime) {
-    logoutUser();
-    return;
+  try {
+    const payloadBase64 = token.split(".")[1];
+    const decodedPayload = JSON.parse(atob(payloadBase64));
+
+    const currentTime = Math.floor(Date.now() / 1000);
+
+    // Token vaxtı keçibsə
+    if (decodedPayload.exp < currentTime) {
+      return false;
+    }
+
+    return true;
+  } catch (err) {
+    return false;
   }
 }

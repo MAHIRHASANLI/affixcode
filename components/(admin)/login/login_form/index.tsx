@@ -8,11 +8,15 @@ import React from "react";
 
 import styles from "./index.module.css";
 import { trimObject } from "@/utils/trim_object";
-import { sweetAlert } from "@/utils/sweet_alert";
+import { sweetAlertLogIn } from "@/utils/sweet_alert";
+import { useRouter } from "next/navigation";
 type Props = {};
 
 const LoginForm = (props: Props) => {
   const [isLoading, setIsLoading] = React.useState(false);
+
+  const router = useRouter();
+
   const formik = useFormik({
     initialValues: {
       username: "",
@@ -22,15 +26,22 @@ const LoginForm = (props: Props) => {
     onSubmit: async (values) => {
       setIsLoading(true);
       try {
-        const response = await loginRequest(
+        const { token } = await loginRequest(
           trimObject({ ...values, isAdmin: true })
         );
-        console.log(".", response);
-        sweetAlert("success", "Daxil olundu.");
+
+        if (token) {
+          // Cookie olaraq yazırıq (burada 1 saatlıq müddət veririk)
+          document.cookie = `accessToken=${token}; path=/; max-age=3600`;
+          router.replace("/admin/dashboard");
+          sweetAlertLogIn("success", "Daxil olundu.");
+        } else {
+          sweetAlertLogIn("error", "Token alınmadı");
+        }
 
         // loginUser(response.token);
       } catch (error: any) {
-        sweetAlert("error", error.message);
+        sweetAlertLogIn("error", error.message);
       } finally {
         setIsLoading(false);
       }
