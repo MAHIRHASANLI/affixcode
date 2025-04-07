@@ -34,7 +34,6 @@ const LoginForm = (props: Props) => {
           // Cookie olaraq yazırıq (burada 1 saatlıq müddət veririk)
           document.cookie = `accessToken=${token}; path=/; max-age=3600`;
           router.replace("/admin/dashboard");
-          sweetAlertLogIn("success", "Daxil olundu.");
         } else {
           sweetAlertLogIn("error", "Token alınmadı");
         }

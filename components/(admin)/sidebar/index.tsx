@@ -51,7 +51,7 @@ const Sidebar: React.FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
               </Link>
             </li>
           </ul>
-          <hr />
+          {/* <hr /> */}
         </nav>
       </div>
     </aside>

@@ -1,6 +1,6 @@
 .cards-wrapper {
   background: linear-gradient(87deg, #212529 0, #212229 100%);
-  padding: 128px 42px;
+  padding: 128px 42px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
