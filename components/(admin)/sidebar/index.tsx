@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import styles from "./index.module.css";
 import LogoComponent from "@/utils/logo";
@@ -6,13 +8,14 @@ import { MdDashboard } from "react-icons/md";
 import { FaProjectDiagram } from "react-icons/fa";
 import { RiTeamFill } from "react-icons/ri";
 import { FaBlog } from "react-icons/fa6";
+import { RxHamburgerMenu } from "react-icons/rx";
 
-interface SidebarProps {
-  sidebarOpen: boolean;
-  setSidebarOpen: (open: boolean) => void;
-}
+const Sidebar: React.FC = () => {
+  const [sidebarOpen, setSidebarOpen] = React.useState(false);
 
-const Sidebar: React.FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
+  function handleCloseSidebar() {
+    setSidebarOpen((prevState) => !prevState);
+  }
   return (
     <aside
       className={`${styles["sidebar-wrapper"]} `}
@@ -20,34 +23,57 @@ const Sidebar: React.FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
       //   !sidebarOpen ? styles.sidebarClosed : ""
       // }`}
     >
-      <div className={styles.sidebar}>
+      <div
+        className={styles.sidebar}
+        style={{ width: sidebarOpen ? "70px" : "250px" }}
+        // width: 65px;
+      >
         <nav className={styles.menu}>
           <ul>
-            <li className={styles["logo"]}>
-              <LogoComponent />
+            <li
+              className={styles["logo"]}
+              style={{ paddingLeft: sidebarOpen ? "18px" : "25px" }}
+            >
+              <div style={{ display: sidebarOpen ? "none" : "inline" }}>
+                <LogoComponent linkHref="/admin/dashboard" />
+              </div>
+              <button onClick={handleCloseSidebar}>
+                <RxHamburgerMenu />
+              </button>
             </li>
             <li className={styles.menuItem}>
               {" "}
-              <Link href="/admin/dashboard">
+              <Link href="/admin/dashboard" title="Dashboard">
                 {" "}
-                <MdDashboard /> Dashboard
+                <MdDashboard />{" "}
+                <span style={{ display: sidebarOpen ? "none" : "inline" }}>
+                  Dashboard
+                </span>
               </Link>
             </li>
             <li className={styles.menuItem}>
-              <Link href="/admin/project">
+              <Link href="/admin/project" title="Proyektler">
                 <FaProjectDiagram />
-                Projectler
+                <span style={{ display: sidebarOpen ? "none" : "inline" }}>
+                  Proyektler
+                </span>
               </Link>
             </li>
             <li className={styles.menuItem}>
-              <Link href="/admin/blog">
-                <FaBlog /> Blog
+              <Link href="/admin/blog" title="Blog">
+                <FaBlog />{" "}
+                <span style={{ display: sidebarOpen ? "none" : "inline" }}>
+                  Blog
+                </span>
               </Link>
             </li>
             <li className={styles.menuItem}>
-              <Link href="/admin/team">
+              <Link href="/admin/team" title="Komanda">
                 <RiTeamFill />
-                Komanda
+                <span style={{ display: sidebarOpen ? "none" : "inline" }}>
+                  {" "}
+                  Komanda
+                </span>
               </Link>
             </li>
           </ul>

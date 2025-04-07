@@ -9,7 +9,7 @@ const DesktopVersion = (props: Props) => {
   return (
     <div className={styles["desktop-nav-wrapper"]}>
       <div className={styles["desktop-logo"]}>
-        <LogoComponent />
+        <LogoComponent linkHref="/" />
       </div>
       <div className={styles["desktop-menu"]}>
         <ul className={styles["desktop-links"]}>

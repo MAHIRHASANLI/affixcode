@@ -50,7 +50,7 @@ const MobileVersion = () => {
     <div>
       <div className={styles["mobile-nav-wrapper"]}>
         <div className={styles["mobile-logo"]}>
-          <LogoComponent />
+          <LogoComponent linkHref="/" />
         </div>
         <div
           className={styles["mobile-menu"]}

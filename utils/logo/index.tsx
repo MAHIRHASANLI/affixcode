@@ -4,9 +4,9 @@ import Image from "next/image";
 import img from "@/assets/images/logo web.png";
 import styles from "./index.module.css";
 
-const LogoComponent: React.FC = () => {
+const LogoComponent = (linkHref: string) => {
   return (
-    <Link href="/" className={styles.logo}>
+    <Link href={linkHref} className={styles.logo}>
       <div className={styles.images}>
         <Image
           src={img}
