@@ -22,7 +22,7 @@ const BrandSocial = (props: Props) => {
   return (
     <div className={styles["brand-socials"]}>
       <div>
-        <LogoComponent linkHref="/" />
+        <LogoComponent href="/" />
       </div>
       <div className={styles["socials-wrapper"]}>
         {socials.map(({ link, text }, index) => (

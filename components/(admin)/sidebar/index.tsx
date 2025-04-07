@@ -35,7 +35,7 @@ const Sidebar: React.FC = () => {
               style={{ paddingLeft: sidebarOpen ? "18px" : "25px" }}
             >
               <div style={{ display: sidebarOpen ? "none" : "inline" }}>
-                <LogoComponent linkHref="/admin/dashboard" />
+                <LogoComponent href="/admin/dashboard" />
               </div>
               <button onClick={handleCloseSidebar}>
                 <RxHamburgerMenu />
