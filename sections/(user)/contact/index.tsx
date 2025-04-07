@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./index.module.css";
-import ContactTitle from "@/components/contact/contact_title";
-import ContactForm from "@/components/contact/contact_form";
+import ContactTitle from "@/components/(user)/contact/contact_title";
+import ContactForm from "@/components/(user)/contact/contact_form";
 type Props = {};
 
 const ContactSection = (props: Props) => {

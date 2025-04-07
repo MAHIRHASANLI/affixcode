@@ -1,6 +1,6 @@
 import React from "react";
 
-import ProjectsComponent from "@/components/projects/projects/inex";
+import ProjectsComponent from "@/components/(user)/projects/projects/inex";
 
 type Props = {};
 

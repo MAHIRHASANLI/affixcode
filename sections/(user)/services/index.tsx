@@ -1,5 +1,5 @@
-import ServicesItem from "@/components/services/service_item";
-import ServicesIntro from "@/components/services/services_intro";
+import ServicesItem from "@/components/(user)/services/service_item";
+import ServicesIntro from "@/components/(user)/services/services_intro";
 
 import styles from "./index.module.css";
 

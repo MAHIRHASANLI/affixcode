@@ -1,4 +1,4 @@
-import OurAdvantagesWrapper from "@/components/our_advantages/our_advantages_wrapper";
+import OurAdvantagesWrapper from "@/components/(user)/our_advantages/our_advantages_wrapper";
 import React from "react";
 
 type Props = {};

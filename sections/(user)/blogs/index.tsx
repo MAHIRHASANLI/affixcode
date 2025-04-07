@@ -1,4 +1,4 @@
-import SliderBlog from "@/components/blogs";
+import SliderBlog from "@/components/(user)/blogs";
 import TitleComponent from "@/utils/title_section";
 import React from "react";
 

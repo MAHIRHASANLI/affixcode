@@ -1,5 +1,5 @@
-import DesktopVersion from "@/components/header/desktop";
-import MobileVersion from "@/components/header/mobile";
+import DesktopVersion from "@/components/(user)/header/desktop";
+import MobileVersion from "@/components/(user)/header/mobile";
 import React from "react";
 
 type Props = {};

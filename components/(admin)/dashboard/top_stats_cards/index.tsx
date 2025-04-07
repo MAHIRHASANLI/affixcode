@@ -1,17 +1,17 @@
 import React from "react";
 import styles from "./index.module.css";
 import StatsCardItem from "../stats_card_item";
-import { FaMicroblog } from "react-icons/fa6";
 import { GoProjectSymlink } from "react-icons/go";
 import { PiMicrosoftTeamsLogoBold } from "react-icons/pi";
-type Props = {};
+import { MdOutlineMessage } from "react-icons/md";
+import { LuNewspaper } from "react-icons/lu";
 
-const TopStatsCards = (props: Props) => {
+const TopStatsCards = () => {
   const array = [
-    { title: "Bloq", count: 23, icon: <FaMicroblog /> },
+    { title: "Bloq", count: 23, icon: <LuNewspaper /> },
     { title: "Proyekt", count: 19, icon: <GoProjectSymlink /> },
     { title: "Komanda", count: 33, icon: <PiMicrosoftTeamsLogoBold /> },
-    { title: "Blog", count: 23, icon: <FaMicroblog /> },
+    { title: "Mesaj", count: 9, icon: <MdOutlineMessage /> },
   ];
   return (
     <div className={styles["cards-wrapper"]}>

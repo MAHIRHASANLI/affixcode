@@ -7,8 +7,9 @@ import Link from "next/link";
 import { MdDashboard } from "react-icons/md";
 import { FaProjectDiagram } from "react-icons/fa";
 import { RiTeamFill } from "react-icons/ri";
-import { FaBlog } from "react-icons/fa6";
+import { FaBlog, FaMessage } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoNewspaper } from "react-icons/io5";
 
 const Sidebar: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = React.useState(false);
@@ -17,12 +18,7 @@ const Sidebar: React.FC = () => {
     setSidebarOpen((prevState) => !prevState);
   }
   return (
-    <aside
-      className={`${styles["sidebar-wrapper"]} `}
-      // ${
-      //   !sidebarOpen ? styles.sidebarClosed : ""
-      // }`}
-    >
+    <aside className={`${styles["sidebar-wrapper"]} `}>
       <div
         className={styles.sidebar}
         style={{ width: sidebarOpen ? "70px" : "250px" }}
@@ -55,13 +51,13 @@ const Sidebar: React.FC = () => {
               <Link href="/admin/project" title="Proyektler">
                 <FaProjectDiagram />
                 <span style={{ display: sidebarOpen ? "none" : "inline" }}>
-                  Proyektler
+                  Proyektlər
                 </span>
               </Link>
             </li>
             <li className={styles.menuItem}>
               <Link href="/admin/blog" title="Blog">
-                <FaBlog />{" "}
+                <IoNewspaper />
                 <span style={{ display: sidebarOpen ? "none" : "inline" }}>
                   Blog
                 </span>
@@ -73,6 +69,16 @@ const Sidebar: React.FC = () => {
                 <span style={{ display: sidebarOpen ? "none" : "inline" }}>
                   {" "}
                   Komanda
+                </span>
+              </Link>
+            </li>
+
+            <li className={styles.menuItem}>
+              <Link href="/admin/message" title="Komanda">
+                <FaMessage />
+                <span style={{ display: sidebarOpen ? "none" : "inline" }}>
+                  {" "}
+                  Mesajlar
                 </span>
               </Link>
             </li>

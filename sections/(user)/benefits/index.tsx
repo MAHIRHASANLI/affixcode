@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./index.module.css";
-import BenefitsTitle from "@/components/benefits/benefits_title";
-import OurBenefits from "@/components/benefits/our_benefits";
+import BenefitsTitle from "@/components/(user)/benefits/benefits_title";
+import OurBenefits from "@/components/(user)/benefits/our_benefits";
 type Props = {};
 
 const BenefitsSection = (props: Props) => {
