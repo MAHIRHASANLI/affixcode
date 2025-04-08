@@ -1,6 +1,6 @@
 import React from "react";
-import FaqItem from "@/components/faqs/faq_item";
 import styles from "./index.module.css";
+import FaqItem from "../faq_item";
 type Props = {};
 
 const FaqWrapper = (props: Props) => {

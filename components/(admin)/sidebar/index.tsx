@@ -74,7 +74,7 @@ const Sidebar: React.FC = () => {
             </li>
 
             <li className={styles.menuItem}>
-              <Link href="/admin/message" title="Komanda">
+              <Link href="/admin/message" title="Mesajlar">
                 <FaMessage />
                 <span style={{ display: sidebarOpen ? "none" : "inline" }}>
                   {" "}

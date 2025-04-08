@@ -18,11 +18,12 @@
 
 .desktop-links a {
   font-size: 16px;
-  weight: 600;
+  font-weight: 500;
   line-height: 24px;
   text-align: center;
   color: inherit;
   margin-left: 30px;
+
   transition: all 0.2s ease-in-out;
 }
 

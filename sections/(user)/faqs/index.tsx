@@ -1,4 +1,4 @@
-import FaqWrapper from "@/components/faqs/faqs_wrapper";
+import FaqWrapper from "@/components/(user)/faqs/faqs_wrapper";
 import TitleComponent from "@/utils/title_section";
 import React from "react";
 
