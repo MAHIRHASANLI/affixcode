@@ -7,7 +7,7 @@ interface BlogItemPageProps {
   };
 }
 
-const BlogItemPage: React.FC<BlogItemPageProps> = async ({ params }) => {
+const BlogItemPage = async ({ params }: BlogItemPageProps) => {
   const { id } = params;
   const blog = await getByIdBlogRequest(id);
 
