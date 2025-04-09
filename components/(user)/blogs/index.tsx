@@ -7,57 +7,17 @@ import Link from "next/link";
 import { Autoplay, Navigation } from "swiper/modules";
 
 import img1 from "@/assets/images/news 1.jpg";
-import img2 from "@/assets/images/news 2.jpg";
-import img3 from "@/assets/images/news 3.jpg";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import { getAllBlogRequests } from "@/api/blog_requests";
 
 const NewsSlider: React.FC = () => {
-  const news = [
-    {
-      id: 1,
-      image: img1,
-      title: "Rəqəmsal Dünyada Brend Yaradılması: Dizaynın Rolu",
-      description: "Unikal və peşəkar həllər, Brendinə dəyər qatan veb dizayn!",
-    },
-    {
-      id: 2,
-      image: img2,
-      title: "Rəqəmsal Transformasiyanın Biznesə Təsiri: Yenilikçi Yanaşmalar",
-      description:
-        "Rəqəmsal transformasiya, müasir biznes mühitində rəqabət üstünlüyü yaratmaq üçün vacibdir.",
-    },
-    {
-      id: 3,
-      image: img3,
-      title:
-        "İstifadəçi Təcrübəsinin Əhəmiyyəti: Effektiv UI/UX Dizaynının Rolu",
-      description:
-        "UI/UX dizaynı, istifadəçilərin məhsul və ya xidmətlə olan təcrübələrini müəyyən edir.",
-    },
-    {
-      id: 4,
-      image: img1,
-      title: "Rəqəmsal Dünyada Brend Yaradılması: Dizaynın Rolu",
-      description: "Unikal və peşəkar həllər, Brendinə dəyər qatan veb dizayn!",
-    },
-    {
-      id: 5,
-      image: img2,
-      title: "Rəqəmsal Transformasiyanın Biznesə Təsiri: Yenilikçi Yanaşmalar",
-      description:
-        "Rəqəmsal transformasiya, müasir biznes mühitində rəqabət üstünlüyü yaratmaq üçün vacibdir.",
-    },
-    {
-      id: 6,
-      image: img3,
-      title:
-        "İstifadəçi Təcrübəsinin Əhəmiyyəti: Effektiv UI/UX Dizaynının Rolu",
-      description:
-        "UI/UX dizaynı, istifadəçilərin məhsul və ya xidmətlə olan təcrübələrini müəyyən edir.",
-    },
-  ];
+  const [news, setNews] = React.useState<any>([]);
+  React.useEffect(() => {
+    getAllBlogRequests().then((res) => setNews(res));
+  }, []);
+
   return (
     <Swiper
       spaceBetween={20}
@@ -83,27 +43,28 @@ const NewsSlider: React.FC = () => {
       id="news"
       className="mySwiper"
     >
-      {news.map(({ image, title, description }, index) => (
-        <SwiperSlide key={index} className={css[`slider-${index}`]}>
-          <Link href="">
-            <div className={css.slider}>
-              <div className={css.images}>
-                <Image
-                  src={image}
-                  alt={title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
+      {news?.map(
+        ({ imageUrl, title, description, _id }: any, index: number) => (
+          <SwiperSlide key={index} className={css[`slider-${index}`]}>
+            <Link href={`/blog/${_id}`} target="_blank">
+              <div className={css.slider}>
+                <div className={css.images}>
+                  <Image
+                    src={img1}
+                    alt={title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className={css.content}>
+                  <h3>{title}</h3>
+                  <p>{description}</p>
+                </div>
               </div>
-              <div className={css.content}>
-                <h3>{title}</h3>
-
-                <p>{description}</p>
-              </div>
-            </div>
-          </Link>
-        </SwiperSlide>
-      ))}
+            </Link>
+          </SwiperSlide>
+        )
+      )}
     </Swiper>
   );
 };
