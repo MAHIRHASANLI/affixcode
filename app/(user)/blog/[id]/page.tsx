@@ -2,11 +2,6 @@ import { getAllBlogRequests, getByIdBlogRequest } from "@/api/blog_requests";
 import { notFound } from "next/navigation";
 
 // ❗ 'Props' type-i əlavə edirik, amma FC istifadə etmirik
-type Props = {
-  params: {
-    id: any;
-  };
-};
 
 // ✅ Static params üçün - bütün id-ləri gətiririk
 export const generateStaticParams = async () => {
@@ -18,7 +13,7 @@ export const generateStaticParams = async () => {
 };
 
 // ✅ Async page komponenti (FC istifadə etmirik!)
-const BlogItemPage = async ({ params }: Props) => {
+const BlogItemPage = async ({ params }: any) => {
   const { id } = params;
   const blog = await getByIdBlogRequest(id);
 
