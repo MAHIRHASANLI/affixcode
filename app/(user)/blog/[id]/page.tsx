@@ -1,23 +1,16 @@
 import { getAllBlogRequests, getByIdBlogRequest } from "@/api/blog_requests";
 import { notFound } from "next/navigation";
 
-// ❗ 'Props' type-i əlavə edirik, amma FC istifadə etmirik
+interface BlogItemPageProps {
+  params: {
+    id: string;
+  };
+}
 
-// ✅ Static params üçün - bütün id-ləri gətiririk
-export const generateStaticParams = async () => {
-  const blogs = await getAllBlogRequests();
-
-  return blogs.map((blog: any) => ({
-    id: blog.id.toString(),
-  }));
-};
-
-// ✅ Async page komponenti (FC istifadə etmirik!)
-const BlogItemPage = async ({ params }: any) => {
+const BlogItemPage: React.FC<BlogItemPageProps> = async ({ params }) => {
   const { id } = params;
   const blog = await getByIdBlogRequest(id);
 
-  // Not Found səhifəsi üçün
   if (!blog) return notFound();
 
   return (
@@ -31,3 +24,11 @@ const BlogItemPage = async ({ params }: any) => {
 };
 
 export default BlogItemPage;
+
+export const generateStaticParams = async () => {
+  const blogs = await getAllBlogRequests();
+
+  return blogs.map((blog: any) => ({
+    id: blog._id.toString(),
+  }));
+};
