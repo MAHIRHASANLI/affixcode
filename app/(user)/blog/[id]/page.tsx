@@ -1,15 +1,23 @@
-import { getByIdBlogRequest } from "@/api/blog_requests";
-import React from "react";
+import { getAllBlogRequests, getByIdBlogRequest } from "@/api/blog_requests";
 
-type BlogItemPageProps = {
+type Props = {
   params: {
     id: string;
   };
 };
 
-const BlogItemPage = async ({ params }: BlogItemPageProps) => {
+export const generateStaticParams = async () => {
+  const blogs = await getAllBlogRequests();
+
+  return blogs.map((blog: any) => ({
+    id: blog.id.toString(),
+  }));
+};
+
+const BlogItemPage = async ({ params }: Props) => {
   const { id } = params;
   const blog = await getByIdBlogRequest(id);
+
   return (
     <div>
       <h1>{blog.title}</h1>
