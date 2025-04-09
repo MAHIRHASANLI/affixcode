@@ -1,7 +1,13 @@
 import { getByIdBlogRequest } from "@/api/blog_requests";
 import React from "react";
 
-const BlogItemPage = async ({ params }: { params: { id: string } }) => {
+type BlogItemPageProps = {
+  params: {
+    id: string;
+  };
+};
+
+const BlogItemPage = async ({ params }: BlogItemPageProps) => {
   const { id } = params;
   const blog = await getByIdBlogRequest(id);
   return (
