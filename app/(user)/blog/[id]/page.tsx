@@ -5,10 +5,10 @@ import { Metadata } from "next";
 
 const logo = "/images/logo-web.png";
 export const metadata: Metadata = {
-  metadataBase: new URL("https://affixcode.az"),
-  title: "affixcode | Bloq",
+  metadataBase: new URL("https://www.affixcode.az"),
+  title: "AFFIX Code | Bloq",
   description:
-    "affixcode – Müasir veb saytların və ERP sistemlərinin hazırlanması. Biznesinizi onlayn inkişaf etdirmək üçün peşəkar İT həlləri təqdim edirik.",
+    "AFFIX Code – Müasir veb saytların və ERP sistemlərinin hazırlanması. Biznesinizi onlayn inkişaf etdirmək üçün peşəkar İT həlləri təqdim edirik.",
   keywords: [
     "veb sayt hazırlanması",
     "ERP sistemləri",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "AFFIX Code – Veb Sayt və ERP Sistemlərinin Hazırlanması",
     description:
       "AFFIX Code ilə biznesinizi onlayn inkişaf etdirin. Veb sayt, ERP və mobil tətbiqlərin hazırlanması.",
-    url: "https://affixcode.az",
+    url: "https://www.affixcode.az",
     siteName: "AFFIX Code",
     images: [
       {
