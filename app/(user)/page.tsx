@@ -4,9 +4,9 @@ import { Metadata } from "next";
 const logo = "/images/logo-web.png";
 export const metadata: Metadata = {
   metadataBase: new URL("https://affixcode.az"),
-  title: "affixcode | Ana səhifə",
+  title: "AFFIX Code | Ana səhifə",
   description:
-    "affixcode – Müasir veb saytların və ERP sistemlərinin hazırlanması. Biznesinizi onlayn inkişaf etdirmək üçün peşəkar İT həlləri təqdim edirik.",
+    "AFFIX Code – Müasir veb saytların və ERP sistemlərinin hazırlanması. Biznesinizi onlayn inkişaf etdirmək üçün peşəkar İT həlləri təqdim edirik.",
   keywords: [
     "veb sayt hazırlanması",
     "ERP sistemləri",
